@@ -1,0 +1,817 @@
+{
+  "tokenizer": "mixedbread-ai/mxbai-embed-large-v1",
+  "context_limit": 512,
+  "safety_threshold": 460,
+  "total_chunks": 102,
+  "minimum_tokens": 210,
+  "maximum_tokens": 4143,
+  "average_tokens": 505.15,
+  "median_tokens": 381.5,
+  "minimum_words": 179,
+  "maximum_words": 350,
+  "average_words": 312.9,
+  "chunks_exceeding_limit": [
+    {
+      "chunk_id": "hr_policy_manual:recursive:00001",
+      "page_start": 2,
+      "page_end": 4,
+      "word_count": 348,
+      "token_count": 3517
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00002",
+      "page_start": 3,
+      "page_end": 4,
+      "word_count": 347,
+      "token_count": 4143
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00003",
+      "page_start": 4,
+      "page_end": 5,
+      "word_count": 343,
+      "token_count": 3686
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00004",
+      "page_start": 5,
+      "page_end": 7,
+      "word_count": 346,
+      "token_count": 2871
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00005",
+      "page_start": 6,
+      "page_end": 8,
+      "word_count": 350,
+      "token_count": 598
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00018",
+      "page_start": 17,
+      "page_end": 19,
+      "word_count": 259,
+      "token_count": 578
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00019",
+      "page_start": 18,
+      "page_end": 20,
+      "word_count": 325,
+      "token_count": 663
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00021",
+      "page_start": 21,
+      "page_end": 24,
+      "word_count": 299,
+      "token_count": 550
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00038",
+      "page_start": 39,
+      "page_end": 43,
+      "word_count": 324,
+      "token_count": 573
+    }
+  ],
+  "chunks_approaching_limit": [
+    {
+      "chunk_id": "hr_policy_manual:recursive:00020",
+      "page_start": 20,
+      "page_end": 22,
+      "word_count": 349,
+      "token_count": 466
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00072",
+      "page_start": 75,
+      "page_end": 76,
+      "word_count": 328,
+      "token_count": 468
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00090",
+      "page_start": 89,
+      "page_end": 90,
+      "word_count": 348,
+      "token_count": 473
+    }
+  ],
+  "all_chunks": [
+    {
+      "chunk_id": "hr_policy_manual:recursive:00000",
+      "page_start": 1,
+      "page_end": 3,
+      "word_count": 244,
+      "token_count": 326
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00001",
+      "page_start": 2,
+      "page_end": 4,
+      "word_count": 348,
+      "token_count": 3517
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00002",
+      "page_start": 3,
+      "page_end": 4,
+      "word_count": 347,
+      "token_count": 4143
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00003",
+      "page_start": 4,
+      "page_end": 5,
+      "word_count": 343,
+      "token_count": 3686
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00004",
+      "page_start": 5,
+      "page_end": 7,
+      "word_count": 346,
+      "token_count": 2871
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00005",
+      "page_start": 6,
+      "page_end": 8,
+      "word_count": 350,
+      "token_count": 598
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00006",
+      "page_start": 8,
+      "page_end": 9,
+      "word_count": 347,
+      "token_count": 418
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00007",
+      "page_start": 9,
+      "page_end": 10,
+      "word_count": 312,
+      "token_count": 375
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00008",
+      "page_start": 10,
+      "page_end": 10,
+      "word_count": 337,
+      "token_count": 398
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00009",
+      "page_start": 10,
+      "page_end": 11,
+      "word_count": 348,
+      "token_count": 406
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00010",
+      "page_start": 11,
+      "page_end": 12,
+      "word_count": 337,
+      "token_count": 407
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00011",
+      "page_start": 12,
+      "page_end": 14,
+      "word_count": 304,
+      "token_count": 364
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00012",
+      "page_start": 14,
+      "page_end": 14,
+      "word_count": 255,
+      "token_count": 286
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00013",
+      "page_start": 14,
+      "page_end": 15,
+      "word_count": 311,
+      "token_count": 348
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00014",
+      "page_start": 15,
+      "page_end": 16,
+      "word_count": 329,
+      "token_count": 378
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00015",
+      "page_start": 16,
+      "page_end": 16,
+      "word_count": 244,
+      "token_count": 291
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00016",
+      "page_start": 16,
+      "page_end": 17,
+      "word_count": 299,
+      "token_count": 346
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00017",
+      "page_start": 17,
+      "page_end": 18,
+      "word_count": 316,
+      "token_count": 364
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00018",
+      "page_start": 17,
+      "page_end": 19,
+      "word_count": 259,
+      "token_count": 578
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00019",
+      "page_start": 18,
+      "page_end": 20,
+      "word_count": 325,
+      "token_count": 663
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00020",
+      "page_start": 20,
+      "page_end": 22,
+      "word_count": 349,
+      "token_count": 466
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00021",
+      "page_start": 21,
+      "page_end": 24,
+      "word_count": 299,
+      "token_count": 550
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00022",
+      "page_start": 24,
+      "page_end": 25,
+      "word_count": 305,
+      "token_count": 359
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00023",
+      "page_start": 24,
+      "page_end": 25,
+      "word_count": 269,
+      "token_count": 319
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00024",
+      "page_start": 25,
+      "page_end": 26,
+      "word_count": 338,
+      "token_count": 406
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00025",
+      "page_start": 26,
+      "page_end": 27,
+      "word_count": 339,
+      "token_count": 414
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00026",
+      "page_start": 26,
+      "page_end": 28,
+      "word_count": 320,
+      "token_count": 382
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00027",
+      "page_start": 27,
+      "page_end": 28,
+      "word_count": 268,
+      "token_count": 319
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00028",
+      "page_start": 28,
+      "page_end": 29,
+      "word_count": 335,
+      "token_count": 400
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00029",
+      "page_start": 29,
+      "page_end": 30,
+      "word_count": 349,
+      "token_count": 424
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00030",
+      "page_start": 30,
+      "page_end": 30,
+      "word_count": 210,
+      "token_count": 268
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00031",
+      "page_start": 30,
+      "page_end": 31,
+      "word_count": 348,
+      "token_count": 446
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00032",
+      "page_start": 31,
+      "page_end": 32,
+      "word_count": 321,
+      "token_count": 377
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00033",
+      "page_start": 32,
+      "page_end": 32,
+      "word_count": 275,
+      "token_count": 329
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00034",
+      "page_start": 32,
+      "page_end": 35,
+      "word_count": 306,
+      "token_count": 365
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00035",
+      "page_start": 34,
+      "page_end": 36,
+      "word_count": 335,
+      "token_count": 425
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00036",
+      "page_start": 35,
+      "page_end": 36,
+      "word_count": 324,
+      "token_count": 419
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00037",
+      "page_start": 36,
+      "page_end": 40,
+      "word_count": 339,
+      "token_count": 406
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00038",
+      "page_start": 39,
+      "page_end": 43,
+      "word_count": 324,
+      "token_count": 573
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00039",
+      "page_start": 43,
+      "page_end": 44,
+      "word_count": 318,
+      "token_count": 370
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00040",
+      "page_start": 44,
+      "page_end": 44,
+      "word_count": 335,
+      "token_count": 377
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00041",
+      "page_start": 44,
+      "page_end": 46,
+      "word_count": 330,
+      "token_count": 363
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00042",
+      "page_start": 46,
+      "page_end": 47,
+      "word_count": 350,
+      "token_count": 373
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00043",
+      "page_start": 47,
+      "page_end": 49,
+      "word_count": 346,
+      "token_count": 373
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00044",
+      "page_start": 48,
+      "page_end": 51,
+      "word_count": 343,
+      "token_count": 397
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00045",
+      "page_start": 51,
+      "page_end": 52,
+      "word_count": 300,
+      "token_count": 343
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00046",
+      "page_start": 52,
+      "page_end": 52,
+      "word_count": 338,
+      "token_count": 392
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00047",
+      "page_start": 52,
+      "page_end": 53,
+      "word_count": 323,
+      "token_count": 354
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00048",
+      "page_start": 53,
+      "page_end": 54,
+      "word_count": 261,
+      "token_count": 295
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00049",
+      "page_start": 54,
+      "page_end": 55,
+      "word_count": 328,
+      "token_count": 383
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00050",
+      "page_start": 55,
+      "page_end": 56,
+      "word_count": 340,
+      "token_count": 365
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00051",
+      "page_start": 55,
+      "page_end": 56,
+      "word_count": 330,
+      "token_count": 357
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00052",
+      "page_start": 56,
+      "page_end": 57,
+      "word_count": 331,
+      "token_count": 381
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00053",
+      "page_start": 57,
+      "page_end": 58,
+      "word_count": 269,
+      "token_count": 321
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00054",
+      "page_start": 58,
+      "page_end": 59,
+      "word_count": 350,
+      "token_count": 400
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00055",
+      "page_start": 58,
+      "page_end": 59,
+      "word_count": 337,
+      "token_count": 381
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00056",
+      "page_start": 59,
+      "page_end": 60,
+      "word_count": 331,
+      "token_count": 389
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00057",
+      "page_start": 60,
+      "page_end": 62,
+      "word_count": 320,
+      "token_count": 398
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00058",
+      "page_start": 62,
+      "page_end": 63,
+      "word_count": 306,
+      "token_count": 384
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00059",
+      "page_start": 63,
+      "page_end": 63,
+      "word_count": 345,
+      "token_count": 417
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00060",
+      "page_start": 63,
+      "page_end": 67,
+      "word_count": 349,
+      "token_count": 435
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00061",
+      "page_start": 66,
+      "page_end": 68,
+      "word_count": 337,
+      "token_count": 406
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00062",
+      "page_start": 68,
+      "page_end": 69,
+      "word_count": 339,
+      "token_count": 400
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00063",
+      "page_start": 69,
+      "page_end": 70,
+      "word_count": 296,
+      "token_count": 363
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00064",
+      "page_start": 69,
+      "page_end": 70,
+      "word_count": 335,
+      "token_count": 393
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00065",
+      "page_start": 70,
+      "page_end": 71,
+      "word_count": 313,
+      "token_count": 369
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00066",
+      "page_start": 71,
+      "page_end": 72,
+      "word_count": 349,
+      "token_count": 423
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00067",
+      "page_start": 72,
+      "page_end": 73,
+      "word_count": 343,
+      "token_count": 408
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00068",
+      "page_start": 72,
+      "page_end": 73,
+      "word_count": 328,
+      "token_count": 397
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00069",
+      "page_start": 73,
+      "page_end": 74,
+      "word_count": 275,
+      "token_count": 334
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00070",
+      "page_start": 74,
+      "page_end": 75,
+      "word_count": 300,
+      "token_count": 359
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00071",
+      "page_start": 75,
+      "page_end": 76,
+      "word_count": 345,
+      "token_count": 398
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00072",
+      "page_start": 75,
+      "page_end": 76,
+      "word_count": 328,
+      "token_count": 468
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00073",
+      "page_start": 76,
+      "page_end": 77,
+      "word_count": 206,
+      "token_count": 334
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00074",
+      "page_start": 77,
+      "page_end": 77,
+      "word_count": 329,
+      "token_count": 359
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00075",
+      "page_start": 77,
+      "page_end": 80,
+      "word_count": 302,
+      "token_count": 365
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00076",
+      "page_start": 80,
+      "page_end": 80,
+      "word_count": 201,
+      "token_count": 248
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00077",
+      "page_start": 80,
+      "page_end": 81,
+      "word_count": 333,
+      "token_count": 364
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00078",
+      "page_start": 81,
+      "page_end": 82,
+      "word_count": 290,
+      "token_count": 341
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00079",
+      "page_start": 82,
+      "page_end": 83,
+      "word_count": 347,
+      "token_count": 399
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00080",
+      "page_start": 83,
+      "page_end": 84,
+      "word_count": 241,
+      "token_count": 274
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00081",
+      "page_start": 83,
+      "page_end": 84,
+      "word_count": 270,
+      "token_count": 314
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00082",
+      "page_start": 84,
+      "page_end": 85,
+      "word_count": 200,
+      "token_count": 236
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00083",
+      "page_start": 84,
+      "page_end": 85,
+      "word_count": 304,
+      "token_count": 359
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00084",
+      "page_start": 85,
+      "page_end": 86,
+      "word_count": 179,
+      "token_count": 210
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00085",
+      "page_start": 85,
+      "page_end": 87,
+      "word_count": 349,
+      "token_count": 413
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00086",
+      "page_start": 86,
+      "page_end": 87,
+      "word_count": 345,
+      "token_count": 400
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00087",
+      "page_start": 87,
+      "page_end": 88,
+      "word_count": 339,
+      "token_count": 395
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00088",
+      "page_start": 88,
+      "page_end": 89,
+      "word_count": 349,
+      "token_count": 410
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00089",
+      "page_start": 88,
+      "page_end": 89,
+      "word_count": 272,
+      "token_count": 392
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00090",
+      "page_start": 89,
+      "page_end": 90,
+      "word_count": 348,
+      "token_count": 473
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00091",
+      "page_start": 90,
+      "page_end": 91,
+      "word_count": 309,
+      "token_count": 339
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00092",
+      "page_start": 91,
+      "page_end": 92,
+      "word_count": 347,
+      "token_count": 395
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00093",
+      "page_start": 91,
+      "page_end": 92,
+      "word_count": 271,
+      "token_count": 316
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00094",
+      "page_start": 92,
+      "page_end": 93,
+      "word_count": 347,
+      "token_count": 381
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00095",
+      "page_start": 93,
+      "page_end": 94,
+      "word_count": 292,
+      "token_count": 331
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00096",
+      "page_start": 94,
+      "page_end": 95,
+      "word_count": 350,
+      "token_count": 398
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00097",
+      "page_start": 95,
+      "page_end": 96,
+      "word_count": 348,
+      "token_count": 399
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00098",
+      "page_start": 96,
+      "page_end": 97,
+      "word_count": 344,
+      "token_count": 397
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00099",
+      "page_start": 96,
+      "page_end": 97,
+      "word_count": 312,
+      "token_count": 361
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00100",
+      "page_start": 97,
+      "page_end": 98,
+      "word_count": 287,
+      "token_count": 333
+    },
+    {
+      "chunk_id": "hr_policy_manual:recursive:00101",
+      "page_start": 98,
+      "page_end": 98,
+      "word_count": 183,
+      "token_count": 213
+    }
+  ]
+}
