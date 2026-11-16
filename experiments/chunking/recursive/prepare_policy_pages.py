@@ -15,7 +15,7 @@ OUTPUT_DIR = (
     PROJECT_ROOT
     / "data"
     / "processed"
-    / "experiments"
+    / "chunks"
     / "recursive"
 )
 

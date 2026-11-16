@@ -1,3 +1,6 @@
 chromadb==1.5.9
 pypdf==7.0.1
 rank-bm25==0.2.2
+requests==2.34.2
+sentence-transformers==6.3.0
+tokenizers==0.23.3

@@ -17,11 +17,16 @@ class DocumentAccessControl:
 
     def can_access(self, user_role, document_access_level):
 
-        # Unknown roles are denied
+        # Reject malformed inputs safely.
+        if not isinstance(user_role, str):
+            return False
+
+        if not isinstance(document_access_level, str):
+            return False
+
         if user_role not in self.ROLE_PERMISSIONS:
             return False
 
-        # Missing or invalid access metadata is denied
         if document_access_level not in self.VALID_ACCESS_LEVELS:
             return False
 
@@ -33,6 +38,9 @@ class DocumentAccessControl:
 
         if not isinstance(documents, list):
             raise ValueError("documents must be a list")
+
+        if not isinstance(user_role, str):
+            return []
 
         if user_role not in self.ROLE_PERMISSIONS:
             return []

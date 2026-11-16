@@ -36,16 +36,26 @@ class ContextBuilder:
             contexts=parent_contexts,
             strategy=self.ordering_strategy,
         )
-
         formatted_contexts = []
         sources = []
+        seen_source_ids = set()
 
         original_paragraph_count = 0
         unique_paragraph_count = 0
         duplicates_removed = 0
 
         # 2. Deduplicate and format each ordered source
-        for index, parent in enumerate(ordered_contexts, start=1):
+        for parent in ordered_contexts:
+
+            chunk_id = parent["chunk_id"]
+
+            # Skip duplicate parent chunks
+            if chunk_id in seen_source_ids:
+                continue
+
+            seen_source_ids.add(chunk_id)
+
+            index = len(sources) + 1
 
             policy_title = parent["policy_title"]
             page_start = parent["page_start"]
@@ -79,17 +89,6 @@ class ContextBuilder:
             )
 
             formatted_contexts.append(formatted_context)
-
-            sources.append({
-                "source_id": chunk_id,
-                "policy_title": policy_title,
-                "page_start": page_start,
-                "page_end": page_end,
-                "retrieval_rank": parent.get("retrieval_rank"),
-                "rerank_score": parent.get("rerank_score"),
-                "rrf_score": parent.get("rrf_score"),
-                "ranking_method": parent.get("ranking_method"),
-            })
             sources.append({
                 "source_index": index,
                 "source_id": chunk_id,

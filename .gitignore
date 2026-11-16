@@ -39,3 +39,7 @@ htmlcov/
 # OS
 .DS_Store
 Thumbs.db
+
+
+# All generated and processed project data
+data/processed/

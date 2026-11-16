@@ -23,12 +23,10 @@ PAGES_FILE = (
 )
 
 
-TOC_FILE = (
+REGISTRY_FILE = (
     PROJECT_ROOT
     / "data"
     / "processed"
-    / "chunks"
-    / "policy_toc"
     / "hr_toc_registry.json"
 )
 
@@ -81,12 +79,17 @@ def main():
 
     pages = load_jsonl(PAGES_FILE)
 
-    with open(TOC_FILE, "r", encoding="utf-8") as file:
+    with open(REGISTRY_FILE, "r", encoding="utf-8") as file:
         registry = json.load(file)
+
+    total_pages = max(
+    page["metadata"]["page"]
+    for page in pages
+)
 
     page_registry = build_page_registry(
         registry,
-        total_pages=98
+        total_pages=total_pages
     )
 
     print(f"Total pages loaded: {len(pages)}")

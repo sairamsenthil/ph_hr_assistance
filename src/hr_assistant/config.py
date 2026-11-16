@@ -1,3 +1,4 @@
+
 from pathlib import Path
 
 # Project root directory
@@ -9,14 +10,14 @@ RAW_DATA_DIR = DATA_DIR / "raw"
 PROCESSED_DATA_DIR = DATA_DIR / "processed"
 
 # Vector database directory
-CHROMA_DB_DIR = PROJECT_ROOT / "chroma_db"
+CHROMA_DB_DIR = PROCESSED_DATA_DIR / "vector_db" / "dense"
 
 # Ollama configuration
 OLLAMA_BASE_URL = "http://localhost:11434"
 
 # Local LLM models
 GENERATION_MODEL = "qwen3:8b"
-EMBEDDING_MODEL = "mxbai-embed-large:latest"
+EMBEDDING_MODEL = "BAAI/bge-small-en-v1.5"
 
 # ChromaDB configuration
-COLLECTION_NAME = "hr_policy_chunks"
+COLLECTION_NAME = "hr_policy_dense_children"

@@ -12,7 +12,7 @@ INPUT_FILE = (
     PROJECT_ROOT
     / "data"
     / "processed"
-    / "experiments"
+    / "chunks"
     / "recursive"
     / "policy_pages.jsonl"
 )
@@ -21,13 +21,15 @@ OUTPUT_FILE = (
     PROJECT_ROOT
     / "data"
     / "processed"
-    / "experiments"
+    / "chunks"
     / "recursive"
     / "normalized_policy_pages.jsonl"
 )
 
 
+
 def main():
+    OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     with open(INPUT_FILE, "r", encoding="utf-8") as file:
         pages = [
             json.loads(line)

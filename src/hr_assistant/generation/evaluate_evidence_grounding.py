@@ -8,7 +8,7 @@ from collections import Counter
 # 1. CONFIGURATION
 # --------------------------------------------------
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
 
 ARTIFACT_FILE = (
     PROJECT_ROOT

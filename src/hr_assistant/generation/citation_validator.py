@@ -25,10 +25,30 @@ class CitationValidator:
         if not isinstance(sources, list):
             raise ValueError("sources must be a list")
 
-        # 3. Identify valid source indexes
-        valid_source_ids = set(
-            range(1, len(sources) + 1)
-        )
+        # 3. Extract actual source indexes.
+        # Preserve original indexes after context-budget filtering.
+        valid_source_ids = set()
+
+        for position, source in enumerate(sources, start=1):
+
+            if not isinstance(source, dict):
+                raise ValueError("Each source must be a dictionary")
+
+            source_index = source.get("source_index", position)
+
+            if (
+                not isinstance(source_index, int)
+                or isinstance(source_index, bool)
+                or source_index < 1
+            ):
+                raise ValueError("Invalid source_index")
+
+            if source_index in valid_source_ids:
+                raise ValueError(
+                    f"Duplicate source_index: {source_index}"
+                )
+
+            valid_source_ids.add(source_index)
 
         # 4. Extract citations
         citations = [
@@ -45,7 +65,7 @@ class CitationValidator:
             if citation not in valid_source_ids
         ]
 
-        # 6. Check whether citations are missing
+        # 6. Check missing citations
         uncited_answer = len(citations) == 0
 
         # 7. Determine validation status
